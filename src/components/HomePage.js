@@ -6,10 +6,6 @@ function HomePage() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
 
-  function handleClick() {
-    setIsHidden(true);
-  }
-
   return (
     <div>
       <h1 className="homePage-title">Advanced React Journal</h1>
@@ -18,6 +14,7 @@ function HomePage() {
         I am documenting my Advance React practice and the things I am learning
         on here. I started
       </h2>
+
       <section className="Day1">
         <h2 className="section-heading">Date: January 19, 2023</h2>
         <ol className="homePage-OL">
@@ -43,7 +40,7 @@ function HomePage() {
           {/* Conditionally render the rest of the section based on the value of isExpanded or isHidden state */}
           {!isExpanded && (
             <div className="read-more" onClick={() => setIsExpanded(true)}>
-              Read More
+              Show less
             </div>
           )}
           {isExpanded && !isHidden && (
@@ -115,8 +112,11 @@ function HomePage() {
                   unordered list in the UI.
                 </li>
               </ul>
-              <div className="hide-section" onClick={handleClick}>
-                Hide
+              <div
+                className="hide-section"
+                onClick={() => setIsHidden(setIsExpanded)}
+              >
+                show less
               </div>
             </div>
           )}
