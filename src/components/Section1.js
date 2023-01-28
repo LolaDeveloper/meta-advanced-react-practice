@@ -6,7 +6,7 @@ function Section1() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   return (
-    <section className="Day1">
+    <section className="Days">
       <h2 className="section-heading">Date: January 19, 2023</h2>
       <ol className="homePage-OL">
         <li className="homePage-List"> The App component explained</li>
@@ -29,10 +29,10 @@ function Section1() {
           </li>
         </ul>
         {/* Conditionally render or hide the rest of the section based on the value of isExpanded or isHidden state */}
-        {!isExpanded && ( // only render this div if isExpanded is false
+        {!isExpanded && (
           <div className="read-more" onClick={() => setIsExpanded(true)}>
-            {" "}
-            // only render this div if isExpanded is false Show more
+            Show more
+            {/* only render this div if isExpanded is false */}
           </div>
         )}
         {isExpanded && !isHidden && (

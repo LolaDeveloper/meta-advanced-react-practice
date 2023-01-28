@@ -2,11 +2,12 @@ import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import HomePage from "./components/HomePage";
 import List from "./List";
+import LowCalories from "./LowCalories";
 
 const topDesserts = [
   {
     id: "1",
-    title: "Tiramisu",
+    name: "Tiramisu",
     description: "The best tiramisu in town",
     calories: 400,
     image: "https://picsum.photos/200/300/?random",
@@ -15,7 +16,7 @@ const topDesserts = [
   },
   {
     id: "2",
-    title: "Lemon Icecream",
+    name: "Lemon Icecream",
     description: "Mind blowing taste",
     calories: 200,
     image: "https://picsum.photos/200/300/?random",
@@ -24,7 +25,7 @@ const topDesserts = [
   },
   {
     id: "3",
-    title: "Chocolate mousse",
+    name: "Chocolate mousse",
     description: "Yummy flavor",
     calories: 200,
     image: "https://picsum.photos/200/300/?random",
@@ -33,7 +34,7 @@ const topDesserts = [
   },
   {
     id: "4",
-    title: "Cheesecake",
+    name: "Cheesecake",
     description: "Literally melts in your mouth",
     calories: 600,
     image: "https://picsum.photos/200/300/?random",
@@ -43,9 +44,10 @@ const topDesserts = [
 ];
 function App() {
   const listItems = topDesserts.map((dessert) => {
-    const itemText = `${dessert.title} - ${dessert.price}`;
+    const itemText = `${dessert.name} - ${dessert.price}`;
     return <li> {itemText}</li>;
   });
+
   return (
     <div className="App">
       <nav className="nav">
@@ -57,10 +59,16 @@ function App() {
           {" "}
           Lists
         </Link>
+        <Link to="/Calories" className="nav-item">
+          {" "}
+          Calories
+        </Link>
       </nav>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Lists" element={<List dessertList={listItems} />} />
+
+        <Route path="/Calories" element={<LowCalories data={topDesserts} />} />
       </Routes>
     </div>
   );
