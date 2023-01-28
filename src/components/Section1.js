@@ -29,9 +29,10 @@ function Section1() {
           </li>
         </ul>
         {/* Conditionally render or hide the rest of the section based on the value of isExpanded or isHidden state */}
-        {!isExpanded && (
+        {!isExpanded && ( // only render this div if isExpanded is false
           <div className="read-more" onClick={() => setIsExpanded(true)}>
-            Show less
+            {" "}
+            // only render this div if isExpanded is false Show more
           </div>
         )}
         {isExpanded && !isHidden && (
