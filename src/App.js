@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import HomePage from "./components/HomePage";
+import KeysPractice from "./KeysPractice";
 import List from "./List";
 
 const topDesserts = [
@@ -57,10 +58,15 @@ function App() {
           {" "}
           Lists
         </Link>
+        <Link to="/KeysP" className="nav-item">
+          {" "}
+          Keys
+        </Link>
       </nav>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Lists" element={<List dessertList={listItems} />} />
+        <Route path="/KeysP" element={<KeysPractice />} />
       </Routes>
     </div>
   );
