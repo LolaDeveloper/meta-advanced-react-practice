@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import HomePage from "./components/HomePage";
+import KeysPractice from "./KeysPractice";
 import List from "./List";
 import LowCalories from "./LowCalories";
 
@@ -59,6 +60,10 @@ function App() {
           {" "}
           Lists
         </Link>
+        <Link to="/KeysP" className="nav-item">
+          {" "}
+          Keys
+        </Link>
         <Link to="/Calories" className="nav-item">
           {" "}
           Calories
@@ -67,6 +72,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Lists" element={<List dessertList={listItems} />} />
+        <Route path="/KeysP" element={<KeysPractice />} />
 
         <Route path="/Calories" element={<LowCalories data={topDesserts} />} />
       </Routes>
