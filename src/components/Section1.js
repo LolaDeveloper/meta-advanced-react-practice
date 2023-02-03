@@ -104,6 +104,144 @@ function Section1() {
                 list in the UI.
               </li>
             </ul>
+            <div>
+              <section className="Days">
+                <h2 className="section-heading">Date: January 20, 2023</h2>
+                <ol className="homePage-OL">
+                  <li className="homePage-List">
+                    {" "}
+                    Worked on Show/ Hide function
+                  </li>
+                  <p className="sub-topic">
+                    {" "}
+                    So, I worked on toggling between show more and show less. It
+                    took a while but I finally got it.
+                  </p>
+                  <div>
+                    <li className="homePage-List">React Hooks</li>
+                    <p className="sub-topic"></p>
+                    <ul>
+                      <li className="homePage-List">
+                        using the React Hooks "useState" to manage the state of
+                        two variables, "isExpanded" and "isHidden". It is using
+                        a ternary operator to conditionally render JSX elements
+                        based on the values of these two state variables.
+                      </li>
+                      <li className="homePage-List">
+                        When the page first loads, the "isExpanded" state
+                        variable is set to "false" and the "isHidden" state
+                        variable is set to "false" . When the user clicks on the
+                        "Show more" button, the "isExpanded" state variable is
+                        set to "true" and the JSX elements inside the first
+                        ternary operator will be rendered.
+                      </li>
+                      <li className="homePage-List">
+                        When the user clicks on the "show less" button, the
+                        "isHidden" state variable is set to "true" and the JSX
+                        elements inside the first ternary operator will be
+                        hidden.
+                      </li>
+                    </ul>
+                  </div>
+                </ol>
+              </section>
+            </div>
+            <br />
+            <div>
+              <section className="Days">
+                <h2 className="section-heading">Date: January 28, 2023</h2>
+                <ol className="homePage-OL">
+                  <li className="homePage-List">
+                    {" "}
+                    Mapping with the filter() and sort() methods
+                  </li>
+                  <p className="sub-topic">
+                    {" "}
+                    In this practice session, I mapped through an array of
+                    desserts list and eleminated elements from the list using
+                    filtering and sorting.
+                  </p>
+                  <div>
+                    <li className="homePage-List">
+                      The Filter() and Sort() Method
+                    </li>
+                    <p className="sub-topic"></p>
+                    <ul>
+                      <li className="homePage-List">
+                        The filter() method was used to create a copy of the
+                        array to filter and eliminate and only display the
+                        elements that fulfill the condition pass the test.
+                      </li>
+                      <li className="homePage-List">
+                        The sort() method was used to sort the list in ascending
+                        order using a comparison function provided.
+                      </li>
+                    </ul>
+                    <br />
+                  </div>
+                </ol>
+              </section>
+            </div>
+            <br />
+            <div>
+              <section className="Days">
+                <h2 className="section-heading">Date: February 02 & 03 2023</h2>
+                <ol className="homePage-OL">
+                  <li className="homePage-List">
+                    {" "}
+                    Some practice with React "Keys"
+                  </li>
+                  <p className="sub-topic">
+                    {" "}
+                    On February 2nd, I followed the example in the tutorial and
+                    did some practice on using keys within a simple todo list
+                    components.
+                    <br />
+                    Then, I found that some codes I had on my old laptop were
+                    not updated to GitHub so I set out to to recover them and
+                    merge which resulted in conflicts in the GUI. This is worthy
+                    of mention because I was able to open the comman line to
+                    practice what I learned on the version control course to see
+                    what is causing the merge issue.
+                  </p>
+                  <ul>
+                    <li className="homePage-List">
+                      The component uses the useState hook to initialize the
+                      todos state with an array of two to-do items. The setTodos
+                      function is used to update the todos. state.
+                    </li>
+                    <li className="homePage-List">
+                      The practice included returning the reverse() method in a
+                      function called reverseOrder which, when called, will
+                      reverse the order of the todos array by using the spread
+                      operator (...) to spread the todos array into a new array,
+                      which is then reversed using the reverse method. The
+                      updated array is then set as the new state using setTodos.
+                      The reverse() method is an array method in JavaScript that
+                      reverses the order of the elements in an array. The
+                      original array is modified and the order of the elements
+                      is reversed.
+                    </li>
+                    <li className="homePage-List">
+                      The reverse() method is an array method in JavaScript that
+                      reverses the order of the elements in an array. The
+                      original array is modified and the order of the elements
+                      is reversed.
+                    </li>
+                  </ul>
+                  <p className="sub-topic">
+                    Upon trying to push and commit to Master, I found that some
+                    codes I had on my old laptop were not updated to GitHub so I
+                    set out to to recover them and merge which resulted in
+                    conflicts in the GUI. This is worthy of mention because I
+                    was able to open the command line to practice what I learned
+                    on the version control course to see what is causing the
+                    merge issue. issues finally resolved and all files
+                    recovered.
+                  </p>
+                </ol>
+              </section>
+            </div>
             <div
               className="hide-section"
               onClick={() => setIsHidden(setIsExpanded)}

@@ -1,7 +1,5 @@
 import "../App.css";
 import Section1 from "./Section1";
-import Section2 from "./Section2";
-import Section3 from "./Section3";
 
 function HomePage() {
   return (
@@ -13,10 +11,8 @@ function HomePage() {
         on here. I started
       </h2>
       <Section1 />
-      <br></br>
-      <Section2 />
+
       <br />
-      <Section3 />
     </div>
   );
 }
