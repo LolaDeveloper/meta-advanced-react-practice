@@ -1,5 +1,6 @@
 import "../App.css";
 import Section1 from "./Section1";
+import Section2 from "./Section2";
 
 function HomePage() {
   return (
@@ -8,11 +9,12 @@ function HomePage() {
       <h2 className="homePage-topic">
         {" "}
         I am documenting my Advance React practice and the things I am learning
-        on here. I started
+        on here.
       </h2>
       <Section1 />
 
       <br />
+      <Section2 />
     </div>
   );
 }

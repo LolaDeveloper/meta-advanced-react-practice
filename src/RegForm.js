@@ -1,4 +1,4 @@
-import "./App.css";
+import "./RegForm.css";
 import { useState } from "react";
 import { validateEmail } from "./utils";
 
@@ -47,7 +47,7 @@ function RegForm() {
   };
 
   return (
-    <div className="App">
+    <div className="RegForm">
       <form onSubmit={handleSubmit}>
         <fieldset>
           <h2>Sign Up</h2>
@@ -97,9 +97,11 @@ function RegForm() {
                 setPassword({ ...password, isTouched: true });
               }}
             />
+            {/* The "onBlur" prop sets the "isTouched" property of the password object to true */}
             {password.isTouched && password.value.length < 8 ? (
               <PasswordErrorMessage />
             ) : null}
+            {/* Conditionally render the error message if the password length is less than 8 and the password field has been touched (blurred) */}
           </div>
           <div className="Field">
             <label>
