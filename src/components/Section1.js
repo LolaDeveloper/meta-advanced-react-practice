@@ -105,7 +105,7 @@ function Section1() {
               </li>
             </ul>
             <div>
-              <section className="Days">
+              <section>
                 <h2 className="section-heading">Date: January 20, 2023</h2>
                 <ol className="homePage-OL">
                   <li className="homePage-List">
@@ -148,7 +148,7 @@ function Section1() {
             </div>
             <br />
             <div>
-              <section className="Days">
+              <section>
                 <h2 className="section-heading">Date: January 28, 2023</h2>
                 <ol className="homePage-OL">
                   <li className="homePage-List">
@@ -184,7 +184,7 @@ function Section1() {
             </div>
             <br />
             <div>
-              <section className="Days">
+              <section>
                 <h2 className="section-heading">Date: February 02 & 03 2023</h2>
                 <ol className="homePage-OL">
                   <li className="homePage-List">
