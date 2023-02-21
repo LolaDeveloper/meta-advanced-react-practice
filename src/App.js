@@ -5,6 +5,7 @@ import KeysPractice from "./KeysPractice";
 import List from "./List";
 import LowCalories from "./LowCalories";
 import RegForm from "./RegForm";
+import GiftCard from "./GiftCard";
 
 const topDesserts = [
   {
@@ -72,6 +73,9 @@ function App() {
         <Link to="/Form" className="nav-item">
           Form
         </Link>
+        <Link to="/GiftCard" className="nav-item">
+          GiftCard
+        </Link>
       </nav>
 
       <Routes>
@@ -80,6 +84,7 @@ function App() {
         <Route path="/KeysP" element={<KeysPractice />} />
         <Route path="/Calories" element={<LowCalories data={topDesserts} />} />
         <Route path="/Form" element={<RegForm />} />
+        <Route path="/GiftCard" element={<GiftCard />} />
       </Routes>
     </div>
   );

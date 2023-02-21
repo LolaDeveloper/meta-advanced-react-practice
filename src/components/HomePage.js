@@ -6,6 +6,7 @@ import Switch from "../Switch";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
 import Section3 from "./Section3";
+import Section4 from "./Section4";
 
 const Title = ({ children }) => {
   // Using the useTheme hook to access the theme from the ThemeContext.
@@ -41,7 +42,10 @@ const Content = () => {
         <Section1 />
         <br />
         <Section2 />
+        <br />
         <Section3 />
+        <br />
+        <Section4 />
       </Paragraph>
     </div>
   );
